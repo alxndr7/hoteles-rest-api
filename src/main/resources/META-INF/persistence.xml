@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.mycompany_Kassa_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>kassa.Entidad.TUsuarioXRol</class>
+    <class>kassa.Entidad.MUsuario</class>
+    <class>kassa.Entidad.MRol</class>
+    <class>kassa.Entidad.MGui</class>
+    <class>kassa.Entidad.MNodo</class>
+    <class>kassa.Entidad.MModulo</class>
+    <class>kassa.Entidad.TPersonal</class>
+    <class>kassa.Entidad.MPerfilRecursosTi</class>
+    <class>kassa.Entidad.MArea</class>
+    <class>kassa.Entidad.MPuesto</class>
+    <class>kassa.Entidad.VwPersonal</class>
+    <class>kassa.Entidad.VwCumple</class>
+    <class>kassa.Entidad.VwPersonal_1</class>
+    <class>kassa.Entidad.VwVacaciones</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@172.20.1.8:1521:dtr1"/>
+      <property name="javax.persistence.jdbc.user" value="appTrn"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="app69Trn"/>
+    </properties>
+  </persistence-unit>
+</persistence>

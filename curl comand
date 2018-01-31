@@ -1,0 +1,20 @@
+curl -X POST -vu clientapp:123456 http://localhost:8080/Kassa/oauth/token -H "Accept: application/json" -d "password=etrn1917&username=etrans&grant_type=password&scope=read%20write&client_secret=123456&client_id=clientapp"
+
+
+curl -X POST -vu clientapp:transal333 http://localhost:8080/Kassa/oauth/token -H "Accept: application/json" -d "password=Podo7370&username=fsalomonf&grant_type=password"
+
+
+
+curl -X POST -vu clientapp:transal333 http://localhost:8080/Kassa/oauth/token -d "password=TTff44&username=cpalol&grant_type=password"
+
+
+curl http://172.20.1.166:8081/Kassa/greeting -H "Authorization: Bearer b76d20b0-41ce-4dfa-9eaf-a2f49898aea8"
+
+
+curl http://localhost:8080/Kassa/loginkassa -d "usuario=fsalomonf&password=Podo7370"
+
+curl -X POST -vu clientapp:transal333 http://172.20.1.166:8081/Kassa/oauth/token -d "password=TTff44&username=cpalol&grant_type=password"
+curl http://172.20.1.166:8081/Kassa/greeting -H "Authorization: Bearer b76d20b0-41ce-4dfa-9eaf-a2f49898aea8"
+
+
+b76d20b0-41ce-4dfa-9eaf-a2f49898aea8

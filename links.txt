@@ -1,0 +1,48 @@
+https://raymondhlee.wordpress.com/2014/12/21/implementing-oauth2-with-spring-security/
+
+** para entender OAUTH2 sobre spring
+
+http://projects.spring.io/spring-security-oauth/docs/oauth2.html
+
+
+
+C:\Users\Admin>curl -X POST -vu clientapp:123456 http://localhost:8080/Kassa/oau
+th/token -H "Accept: application/json" -d "password=trn2017.&username=etrans&gra
+nt_type=password"
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying ::1...
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+* Server auth using Basic with user 'clientapp'
+> POST /Kassa/oauth/token HTTP/1.1
+> Host: localhost:8080
+> Authorization: Basic Y2xpZW50YXBwOjEyMzQ1Ng==
+> User-Agent: curl/7.46.0
+> Accept: application/json
+> Content-Length: 53
+> Content-Type: application/x-www-form-urlencoded
+>
+* upload completely sent off: 53 out of 53 bytes
+< HTTP/1.1 200 OK
+< Server: Apache-Coyote/1.1
+< X-Content-Type-Options: nosniff
+< X-XSS-Protection: 1; mode=block
+< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+< Pragma: no-cache
+< Expires: 0
+< X-Frame-Options: DENY
+< Cache-Control: no-store
+< Pragma: no-cache
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Wed, 25 Jan 2017 16:50:29 GMT
+<
+{"access_token":"4a1e6f7b-783d-431a-a3d1-f1609fc90f23","token_type":"bearer","re
+fresh_token":"3a03a78e-8e27-4907-b43f-cfb47e9e5b17","expires_in":42840,"scope":"
+read write"}* Connection #0 to host localhost left intact
+
+C:\Users\Admin>
+
+C:\Users\Admin>
+
+C:\Users\Admin>
