@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Kassa:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Kassa-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Kassa:war exploded" />
+    </root>
+  </artifact>
+</component>
