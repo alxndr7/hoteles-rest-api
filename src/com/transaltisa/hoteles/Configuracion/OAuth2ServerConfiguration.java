@@ -39,11 +39,11 @@ public class OAuth2ServerConfiguration {
 
 	private static final String RESOURCE_ID = "restservice";
 
-	
-        //Un Authorization server es un servidor que se encarga de gestionar los access tokens, se los entrega al cliente, despues de autenticar el dueño de los recursos,y de obtener autorizaciones,
+
+	//Un Authorization server es un servidor que se encarga de gestionar los access tokens, se los entrega al cliente, despues de autenticar el dueño de los recursos,y de obtener autorizaciones,
 	@Configuration
 	@EnableAuthorizationServer
-        //la anotacion enableauthorization service nos da funciones para implementar de la interfaz AuthorizationServerConfigurer
+	//la anotacion enableauthorization service nos da funciones para implementar de la interfaz AuthorizationServerConfigurer
 	protected static class AuthorizationServerConfiguration extends	AuthorizationServerConfigurerAdapter {
 
 		private TokenStore tokenStore = new InMemoryTokenStore();
@@ -55,40 +55,40 @@ public class OAuth2ServerConfiguration {
 		@Autowired
 		private CustomUserDetailsService userDetailsService;
 
-                
-                //por default el servidor de autorizaciones NO le da ninguna seguridad al end point del mismo servidor de autorizaciones.
-                //en este caso estamos inyectando el Spring security authentication manager, entonces para obtener un Token vamos a necesitar loguearnos primero con usuario y contraseña como esta definido en nuestro CustomUserDetailsService
+
+		//por default el servidor de autorizaciones NO le da ninguna seguridad al end point del mismo servidor de autorizaciones.
+		//en este caso estamos inyectando el Spring security authentication manager, entonces para obtener un Token vamos a necesitar loguearnos primero con usuario y contraseña como esta definido en nuestro CustomUserDetailsService
 		@Override
 		public void configure(AuthorizationServerEndpointsConfigurer endpoints)
 				throws Exception {
 			// @formatter:off
 			endpoints
-				.tokenStore(this.tokenStore)
-				.authenticationManager(this.authenticationManager)
-				.userDetailsService(userDetailsService);
+					.tokenStore(this.tokenStore)
+					.authenticationManager(this.authenticationManager)
+					.userDetailsService(userDetailsService);
 			// @formatter:on
 		}
-                
-                
-                //aqui le damos acceso a nuestra aplicacion cliente(clienteapp) que usara los recursos protegidos
-                //aqui solamente le estamos dando acceso a los recursos password y refresh_token a la aplicacion clientapp.
+
+
+		//aqui le damos acceso a nuestra aplicacion cliente(clienteapp) que usara los recursos protegidos
+		//aqui solamente le estamos dando acceso a los recursos password y refresh_token a la aplicacion clientapp.
 		@Override
 		public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 			// @formatter:off
 			clients
-				.inMemory()
-                                                .withClient("clientapp")
-						.authorizedGrantTypes("password", "refresh_token")
-						.authorities("USER")
-						.scopes("read", "write")
-						.resourceIds(RESOURCE_ID)
-						.secret("transal333");
+					.inMemory()
+					.withClient("clientapp")
+					.authorizedGrantTypes("password", "refresh_token")
+					.authorities("USER")
+					.scopes("read", "write")
+					.resourceIds(RESOURCE_ID)
+					.secret("transal333");
 			// @formatter:on
 		}
-                
-                // el curl necesario para obtener un token es el siguiente:
-                //curl -X POST -vu clientapp:transal333 http://localhost:8080/Kassa/oauth/token -H "Accept: application/json" -d "password=trn2017.&username=etrans&grant_type=password"
-                
+
+		// el curl necesario para obtener un token es el siguiente:
+		//curl -X POST -vu clientapp:transal333 http://localhost:8080/Kassa/oauth/token -H "Accept: application/json" -d "password=trn2017.&username=etrans&grant_type=password"
+
 
 		@Bean
 		@Primary
@@ -101,18 +101,18 @@ public class OAuth2ServerConfiguration {
 
 	}
 
-        
-        
-        @Configuration
+
+
+	@Configuration
 	@EnableResourceServer
-        //Un resource server es el servidor que contiene todos los recursos protegidos, debe ser capaz de responder todos las llamadas a los recursos protegidos usando el Access Token
+	//Un resource server es el servidor que contiene todos los recursos protegidos, debe ser capaz de responder todos las llamadas a los recursos protegidos usando el Access Token
 	protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
 		@Override
 		public void configure(ResourceServerSecurityConfigurer resources) {
 			// @formatter:off
 			resources
-				.resourceId(RESOURCE_ID);
+					.resourceId(RESOURCE_ID);
 			// @formatter:on
 		}
 
@@ -120,12 +120,12 @@ public class OAuth2ServerConfiguration {
 		public void configure(HttpSecurity http) throws Exception {
 			// @formatter:off
 			http
-				.authorizeRequests()
-                                        .antMatchers("/loginkassa").anonymous()
+					.authorizeRequests()
+					.antMatchers("/loginkassa").anonymous()
 					.antMatchers("/users").hasRole("admin")
 					.antMatchers("/greeting").authenticated()
-                                        .antMatchers("/allusers").authenticated()
-                                        .antMatchers("/vacaciones").authenticated();
+					.antMatchers("/allusers").authenticated()
+					.antMatchers("/vacaciones").authenticated();
 			// @formatter:on
 		}
 
