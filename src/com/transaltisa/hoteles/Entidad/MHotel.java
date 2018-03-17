@@ -1,6 +1,7 @@
 package com.transaltisa.hoteles.Entidad;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.io.Serializable;
 
 /**
@@ -21,13 +22,25 @@ public class MHotel implements Serializable{
     @Column(name = "HOTEL_NUM_HAB")
     private Long hotelNumHab;
 
+    @Column(name = "FLOTA")
+    private String flota;
+
+    @Column(name = "ESTADO")
+    private Long estado;
+
+    @Column(name = "PISOS")
+    private Long pisos;
+
     public MHotel() {
     }
 
-    public MHotel(Long hotelId, String hotelNombre, Long hotelNumHab) {
+    public MHotel(Long hotelId, String hotelNombre, Long hotelNumHab, String flota, Long estado, Long pisos) {
         this.hotelId = hotelId;
         this.hotelNombre = hotelNombre;
         this.hotelNumHab = hotelNumHab;
+        this.flota = flota;
+        this.estado = estado;
+        this.pisos = pisos;
     }
 
     public Long getHotelId() {
@@ -52,5 +65,29 @@ public class MHotel implements Serializable{
 
     public void setHotelNumHab(Long hotelNumHab) {
         this.hotelNumHab = hotelNumHab;
+    }
+
+    public String getFlota() {
+        return flota;
+    }
+
+    public void setFlota(String flota) {
+        this.flota = flota;
+    }
+
+    public Long getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Long estado) {
+        this.estado = estado;
+    }
+
+    public Long getPisos() {
+        return pisos;
+    }
+
+    public void setPisos(Long pisos) {
+        this.pisos = pisos;
     }
 }
