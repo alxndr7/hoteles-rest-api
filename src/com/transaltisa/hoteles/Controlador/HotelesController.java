@@ -54,6 +54,17 @@ public class HotelesController {
         return hotelRepository.createHotel(mHotel);
     }
 
+    @RequestMapping(value = "insertPisoHotel", method = RequestMethod.POST)
+    public Integer insert_pisos_hotel(@RequestParam("hotelId") Long hotelId, @RequestParam("piso") Long piso, @RequestParam("numHabPiso") Long numHabPiso) {
+        return hotelRepository.insertPisosHotel(hotelId, piso,numHabPiso);
+    }
+
+    @RequestMapping(value = "insertPersonalRelevo", method = RequestMethod.POST)
+    public Integer insert_personal_relevo(@RequestParam("dni") String dni, @RequestParam("nombreCompleto") String nombreCompleto,
+                                      @RequestParam("puesto") String puesto, @RequestParam("flota") String flota,
+                                      @RequestParam("fechaIngreso") String fechaIngreso,@RequestParam("fechaSalida") String fechaSalida) {
+        return hotelRepository.insertPersonalRelevo(dni, nombreCompleto, puesto, flota, fechaIngreso, fechaSalida);
+    }
 
 /*public void insertar_hotel(@RequestParam("id") Long id, @RequestParam("nombre") String nombre, @RequestParam("numHab") Long numHab, @RequestParam("flota") String flota) {*/
 }

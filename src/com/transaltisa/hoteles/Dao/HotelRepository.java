@@ -59,6 +59,17 @@ public interface HotelRepository extends CrudRepository<MHotel, Long> {
     @Query(value = "insert into logistica.m_hotel (hotel_id, hotel_nombre,hotel_num_hab,flota,estado) VALUES (:hotel.,:nombre,:numHab,:flota,:estado)", nativeQuery = true)
     Integer createHotel(MHotel hotel);
 
+    @Modifying
+    @Query(value = "insert into logistica.t_pisos_hotel (hotel_id, piso, num_hab_piso) VALUES (:hotelId,:piso,:numHabPiso)", nativeQuery = true)
+    Integer insertPisosHotel(@Param("hotelId") Long hotelId, @Param("piso") Long piso, @Param("numHabPiso") Long numHabPiso);
+
+    @Modifying
+    @Query(value = "insert into logistica.t_personal_relevo (dni, nombre_completo, puesto, flota, fecha_ingreso, fecha_salida)" +
+                                                " VALUES (:dni,:nombreCompleto,:puesto, :flota, :fechaIngreso, :fechaSalida)", nativeQuery = true)
+    Integer insertPersonalRelevo(@Param("dni") String dni, @Param("nombreCompleto") String nombreCompleto,
+                                 @Param("puesto") String puesto, @Param("flota") String flota,
+                                 @Param("fechaIngreso") String fechaIngreso,@Param("fechaSalida") String fechaSalida);
+
 
 /*
     @Query()  
