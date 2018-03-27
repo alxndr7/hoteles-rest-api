@@ -3,6 +3,7 @@ package com.transaltisa.hoteles.Entidad;
 import org.codehaus.jackson.annotate.JsonIgnore;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.xml.bind.annotation.XmlTransient;
 import java.io.Serializable;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "M_HOTEL",schema = "LOGISTICA")
-public class MHotel implements Serializable{
+public class MHotelMap implements Serializable{
 
     @Id
     @Column(name = "HOTEL_ID")
@@ -34,16 +35,27 @@ public class MHotel implements Serializable{
     @Column(name = "PISOS")
     private Long pisos;
 
-    public MHotel() {
+  /*  @OneToMany
+    @JoinColumn(name = "HOTEL_ID", nullable = false)
+    private List<THabitacionHotel> habHotel;
+*/
+  /* @OneToMany(mappedBy = "hotel",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<THabitacionHotel> habHotel;//funciona bien*/
+
+    @OneToMany(mappedBy = "hotel",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<TPisosHotel> pisosHotel;
+
+    public MHotelMap() {
     }
 
-    public MHotel(Long hotelId, String hotelNombre, Long hotelNumHab, String flota, Long estado, Long pisos) {
+    public MHotelMap(Long hotelId, String hotelNombre, Long hotelNumHab, String flota, Long estado, Long pisos/*, List<THabitacionHotel> habHotel*/) {
         this.hotelId = hotelId;
         this.hotelNombre = hotelNombre;
         this.hotelNumHab = hotelNumHab;
         this.flota = flota;
         this.estado = estado;
         this.pisos = pisos;
+        /*this.habHotel = habHotel;*/
     }
 
     public Long getHotelId() {
@@ -92,5 +104,15 @@ public class MHotel implements Serializable{
 
     public void setPisos(Long pisos) {
         this.pisos = pisos;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public List<TPisosHotel> getPisosHotel() {
+        return pisosHotel;
+    }
+
+    public void setPisosHotel(List<TPisosHotel> pisosHotel) {
+        this.pisosHotel = pisosHotel;
     }
 }

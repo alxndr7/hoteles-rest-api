@@ -1,10 +1,8 @@
 package com.transaltisa.hoteles.Entidad;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by CESAR-TRN on 7/03/2018.
@@ -18,8 +16,16 @@ public class TPisosHotel implements Serializable{
     @Column(name = "PISO_HOTEL_ID")
     private Long pisosHotelId;
 
-    @Column(name = "HOTEL_ID")
-    private Long hotelId;
+   /* @Column(name = "HOTEL_ID")
+    private Long hotelId;*/
+
+    @ManyToOne
+    @PrimaryKeyJoinColumn(name = "HOTEL_ID")
+    @JoinColumn(name = "HOTEL_ID", nullable = false)
+    private MHotelMap hotel;
+
+    @OneToMany(mappedBy = "pisosHotel",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<THabitacionHotel> habHotel;
 
     @Column(name = "PISO")
     private Long piso;
@@ -30,9 +36,9 @@ public class TPisosHotel implements Serializable{
     public TPisosHotel() {
     }
 
-    public TPisosHotel(Long pisosHotelId, Long hotelId, Long piso, Long numHabPiso) {
+    public TPisosHotel(Long pisosHotelId/*, Long hotelId*/, Long piso, Long numHabPiso) {
         this.pisosHotelId = pisosHotelId;
-        this.hotelId = hotelId;
+       /* this.hotelId = hotelId;*/
         this.piso = piso;
         this.numHabPiso = numHabPiso;
     }
@@ -45,13 +51,13 @@ public class TPisosHotel implements Serializable{
         this.pisosHotelId = pisosHotelId;
     }
 
-    public Long getHotelId() {
+ /*   public Long getHotelId() {
         return hotelId;
     }
 
     public void setHotelId(Long hotelId) {
         this.hotelId = hotelId;
-    }
+    }*/
 
     public Long getPiso() {
         return piso;
@@ -68,4 +74,20 @@ public class TPisosHotel implements Serializable{
     public void setNumHabPiso(Long numHabPiso) {
         this.numHabPiso = numHabPiso;
     }
+
+    public List<THabitacionHotel> getHabHotel() {
+        return habHotel;
+    }
+
+    public void setHabHotel(List<THabitacionHotel> habHotel) {
+        this.habHotel = habHotel;
+    }
+
+    /*public MHotelMap getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(MHotelMap hotel) {
+        this.hotel = hotel;
+    }*/
 }
