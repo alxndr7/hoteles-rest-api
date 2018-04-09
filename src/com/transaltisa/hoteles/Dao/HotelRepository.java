@@ -38,13 +38,13 @@ public interface HotelRepository extends CrudRepository<MHotelMap, Long> {
     List<MReporteFallas> getallReportes();
 
     @Modifying
-    @Query(value = "insert into trn_sistemas.m_reporte_fallas (titulo,reporte_fecha, empresa, convoy, placa_tracto, placa_carreta, kilometraje, ubicacion, desc_falla)" +
-            " VALUES (:titulo, to_date(:reporteFecha,'YYYY-MM-DD HH24:MI:SS') , :empresa, :convoy, :placaTracto, :placaCarreta, :kilometraje, :ubicacion, :descFalla)", nativeQuery = true)
+    @Query(value = "insert into trn_sistemas.m_reporte_fallas (titulo,reporte_fecha, empresa, convoy, placa_tracto, placa_carreta, kilometraje, ubicacion, desc_falla, usuario_id)" +
+            " VALUES (:titulo, to_date(:reporteFecha,'YYYY-MM-DD HH24:MI:SS') , :empresa, :convoy, :placaTracto, :placaCarreta, :kilometraje, :ubicacion, :descFalla, :idUsuario)", nativeQuery = true)
     Integer insertReporte(@Param("titulo") String titulo, @Param("empresa") String empresa,
                           @Param("reporteFecha") String reporteFecha,
                           @Param("convoy") String convoy, @Param("placaTracto") String placaTracto,
                           @Param("placaCarreta") String placaCarreta, @Param("kilometraje") String kilometraje,
-                          @Param("ubicacion") String ubicacion, @Param("descFalla") String descFalla);
+                          @Param("ubicacion") String ubicacion, @Param("descFalla") String descFalla, @Param("idUsuario") Long idUsuario);
 
     @Query("select s from MHotel s where upper(flota) = upper(:flota) AND estado = 1")
     List<MHotel> getHotelesPorFlota(@Param("flota") String flota);

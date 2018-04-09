@@ -33,9 +33,10 @@ public class HotelesController {
                                          @RequestParam("reporteFecha") String reporteFecha,
                                          @RequestParam("convoy") String convoy, @RequestParam("placaTracto") String placaTracto,
                                          @RequestParam("placaCarreta") String placaCarreta, @RequestParam("kilometraje") String kilometraje,
-                                         @RequestParam("ubicacion") String ubicacion, @RequestParam("descFalla") String descFalla) {
+                                         @RequestParam("ubicacion") String ubicacion, @RequestParam("descFalla") String descFalla,
+                                         @RequestParam("idUsuario") Long idUsuario) {
         //return ResponseEntity.ok(user);
-        int response = hotelRepository.insertReporte(titulo, empresa, reporteFecha, convoy, placaTracto, placaCarreta, kilometraje, ubicacion, descFalla);
+        int response = hotelRepository.insertReporte(titulo, empresa, reporteFecha, convoy, placaTracto, placaCarreta, kilometraje, ubicacion, descFalla, idUsuario);
         Response resp = new Response();
 
         if(response == 1)
