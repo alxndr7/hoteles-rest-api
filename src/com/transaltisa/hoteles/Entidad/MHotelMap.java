@@ -14,7 +14,19 @@ import java.util.List;
 
 @Entity
 @Table(name = "M_HOTEL",schema = "LOGISTICA")
-public class MHotelMap implements Serializable{
+
+@NamedStoredProcedureQueries({
+        @NamedStoredProcedureQuery(name = "MHotelMap.sp_desocupar_habitacion",
+                procedureName = "LOGISTICA.DESO_HAB_ANTICIPADA",
+                parameters = {
+                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "habHotId", type = Long.class),
+                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "personalRelevoId", type = Long.class),
+                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "observacion", type = String.class)
+                })
+})
+
+
+public class MHotelMap implements Serializable {
 
     @Id
     @Column(name = "HOTEL_ID")
@@ -115,4 +127,6 @@ public class MHotelMap implements Serializable{
     public void setPisosHotel(List<TPisosHotel> pisosHotel) {
         this.pisosHotel = pisosHotel;
     }
+
+
 }
