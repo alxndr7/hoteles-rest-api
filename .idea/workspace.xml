@@ -7,16 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d5688c-0c5a-4678-a8c2-0f87255788d2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MUsuarioTerceros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevoHist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TRegistroDiario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/VwPersonalHotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Modelo/Cantidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/CorsFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/WebSecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HotelesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HotelesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/HotelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/HotelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MHotelMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MHotelMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MReporteFallas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MReporteFallas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,51 +24,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HotelRepository.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HotelRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/HotelRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2227">
-              <caret line="154" column="52" selection-start-line="154" selection-start-column="52" selection-end-line="154" selection-end-column="52" />
+            <state relative-caret-position="77">
+              <caret line="106" column="20" lean-forward="true" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="140" />
               <folding>
-                <marker date="1524089954529" expanded="true" signature="1634:2088" ph="insert into trn_sistemas.m_reporte_fallas... " />
-                <marker date="1524089954529" expanded="true" signature="2948:3087" ph="update trn_s... " />
-                <marker date="1524089954529" expanded="true" signature="4259:4397" ph="insert into logistica.m_hotel... " />
-                <marker date="1524089954529" expanded="true" signature="4652:4778" ph="update logis... " />
-                <marker date="1524089954529" expanded="true" signature="5003:5063" ph="update logis... " />
-                <marker date="1524089954529" expanded="true" signature="5169:5298" ph="insert into logistica.m_hotel... " />
-                <marker date="1524089954529" expanded="true" signature="5399:5501" ph="insert into logistica.t_pisos_hotel... " />
-                <marker date="1524089954529" expanded="true" signature="5686:5891" ph="insert into logistica.t_personal_relevo_diario... " />
-                <marker date="1524089954529" expanded="true" signature="6271:6543" ph="insert into logistica.t_personal_relevo_diario... " />
-                <marker date="1524089954529" expanded="true" signature="6939:7175" ph="update logis... " />
-                <marker date="1524089954529" expanded="true" signature="7394:7507" ph="update logis... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MUsuarioTerceros.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MUsuarioTerceros.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="31" />
-              <folding>
-                <element signature="e#1397#1398#0" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MUsuario.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MUsuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-              <folding>
-                <marker date="1520449979432" expanded="true" signature="953:1025" ph="select t.* f... M_USUARIO" />
-                <marker date="1520449979432" expanded="true" signature="1121:1210" ph="update trN_s... " />
-                <marker date="1520449979432" expanded="true" signature="1270:1306" ph="select * fro... M_USUARIO" />
-                <marker date="1520449979432" expanded="true" signature="1409:1445" ph="select * fro... M_USUARIO" />
+                <element signature="e#0#9977#0" expanded="true" />
+                <marker date="1525871152877" expanded="true" signature="1634:2088" ph="insert into trn_sistemas.m_reporte_fallas... " />
+                <marker date="1525871152877" expanded="true" signature="2948:3087" ph="update trn_s... " />
+                <marker date="1525871152877" expanded="true" signature="4259:4397" ph="insert into logistica.m_hotel... " />
+                <marker date="1525871152877" expanded="true" signature="4652:4778" ph="update logis... " />
+                <marker date="1525871152877" expanded="true" signature="5003:5063" ph="update logis... " />
+                <marker date="1525871152877" expanded="true" signature="5169:5298" ph="insert into logistica.m_hotel... " />
+                <marker date="1525871152877" expanded="true" signature="5399:5501" ph="insert into logistica.t_pisos_hotel... " />
+                <marker date="1525871152877" expanded="true" signature="5686:5906" ph="insert into logistica.t_personal_relevo_diario... " />
+                <marker date="1525871152877" expanded="true" signature="6347:6634" ph="insert into logistica.t_personal_relevo_diario... " />
+                <marker date="1525871152877" expanded="true" signature="7096:7332" ph="update logis... " />
+                <marker date="1525871152877" expanded="true" signature="7551:7664" ph="update logis... " />
               </folding>
             </state>
           </provider>
@@ -81,26 +50,8 @@
       <file leaf-file-name="HotelesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HotelesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3383">
-              <caret line="237" column="54" selection-start-line="237" selection-start-column="54" selection-end-line="237" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-https.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application-https.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="262">
+              <caret line="170" column="52" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -116,13 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>be</find>
-      <find>bea</find>
-      <find>bean</find>
-      <find>TUsuarioXRol</find>
-      <find>getTUsuarioXRolList</find>
-      <find>tUsuarioXRolList</find>
-      <find>mRol</find>
       <find>t_personal_relevo</find>
       <find>habitacion</find>
       <find>nsertPersonalRelevo</find>
@@ -143,14 +87,22 @@
       <find>hibernate</find>
       <find>JPA</find>
       <find>personal-rele</find>
-      <find>personal-relevo</find>
       <find>desocupar</find>
       <find>personal-re</find>
+      <find>WebSecurityConfigurerAdapter</find>
+      <find>get-registro-diario-all</find>
+      <find>datasource</find>
+      <find>response</find>
+      <find>insertPersonalRelevo</find>
+      <find>orden</find>
+      <find>personal-relevo</find>
+      <find>insertNuevoPersonalRelevo</find>
     </findStrings>
     <dirStrings>
       <dir>C:\00CESAR\Hoteles\HotelesRestApi</dir>
       <dir>C:\00CESAR\Hoteles\HotelesRestApi\src\com\transaltisa\hoteles</dir>
       <dir>C:\00CESAR\Hoteles\HotelesRestApiv2wl</dir>
+      <dir>C:\00CESAR\Hoteles\HotelesRestApiv2wl\src\com\transaltisa\hoteles</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/WebSecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/WebSecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/OAuth2ServerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/Application.java" />
@@ -184,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MHotelPrueba.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/THabitacionHotel.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/THabitacionHotelDet.java" />
-        <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevo.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Modelo/Response.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Application.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -197,8 +147,12 @@
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevoHist.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TRegistroDiario.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MUsuarioTerceros.java" />
-        <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/HotelRepository.java" />
+        <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/WebSecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/CorsFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevo.java" />
         <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HotelesController.java" />
+        <option value="$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/HotelRepository.java" />
       </list>
     </option>
   </component>
@@ -225,11 +179,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1378" />
-    <option name="height" value="733" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -237,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -260,27 +216,19 @@
               <item name="Kassa" type="b2602c69:ProjectViewProjectNode" />
               <item name="HotelesRestApiv2wl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Kassa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelesRestApiv2wl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="hoteles" type="462c0819:PsiDirectoryNode" />
+              <item name="Entidad" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-jwt" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -892,11 +840,18 @@
       <workItem from="1523972621931" duration="20969000" />
       <workItem from="1524237938404" duration="268000" />
       <workItem from="1524492346738" duration="592000" />
+      <workItem from="1524598028380" duration="3626000" />
+      <workItem from="1524684781691" duration="7259000" />
+      <workItem from="1524760618462" duration="1250000" />
+      <workItem from="1525268813815" duration="242000" />
+      <workItem from="1525275588620" duration="90000" />
+      <workItem from="1525786204383" duration="725000" />
+      <workItem from="1525833179772" duration="8674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274206000" />
+    <option name="totallyTimeSpent" value="296072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,6 +864,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -923,29 +879,29 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41419142" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25742576" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23298033" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
+      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -959,36 +915,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HotelesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4029">
-          <caret line="237" column="54" lean-forward="true" selection-start-line="237" selection-start-column="54" selection-end-line="237" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-https.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/MHotelDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Servicios/OrclHotelesService.java" />
     <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Servicios/HotelesService.java" />
     <entry file="file://$PROJECT_DIR$/../HotelesRestApi - copia/src/com/transaltisa/hoteles/Servicio/GreetingController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1049,34 +975,6 @@
     <entry file="file://$PROJECT_DIR$/target/Hoteles-0.2.1/WEB-INF/classes/application-https.properties" />
     <entry file="file://$PROJECT_DIR$/target/Hoteles-0.2.1/WEB-INF/classes/import.sql" />
     <entry file="file://$PROJECT_DIR$/target/Hoteles-0.2.1/META-INF/context.xml" />
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/CustomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="107" column="1" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/OAuth2ServerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="132" column="1" selection-start-line="132" selection-start-column="1" selection-end-line="132" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/THabitacionHotel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1085,28 +983,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Modelo/MyTableRepositoryImpl.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="36" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/GreetingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MyTableRepositoryCustom.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/UsuarioRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Modelo/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1149,13 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/THabitacionHotelDet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1177,23 +1047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TRegistroDiario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/MUsuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-          <folding>
-            <marker date="1520449979432" expanded="true" signature="953:1025" ph="select t.* f... M_USUARIO" />
-            <marker date="1520449979432" expanded="true" signature="1121:1210" ph="update trN_s... " />
-            <marker date="1520449979432" expanded="true" signature="1270:1306" ph="select * fro... M_USUARIO" />
-            <marker date="1520449979432" expanded="true" signature="1409:1445" ph="select * fro... M_USUARIO" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,44 +1058,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="33" column="31" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/HotelRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="154" column="52" selection-start-line="154" selection-start-column="52" selection-end-line="154" selection-end-column="52" />
-          <folding>
-            <marker date="1524089954529" expanded="true" signature="1634:2088" ph="insert into trn_sistemas.m_reporte_fallas... " />
-            <marker date="1524089954529" expanded="true" signature="2948:3087" ph="update trn_s... " />
-            <marker date="1524089954529" expanded="true" signature="4259:4397" ph="insert into logistica.m_hotel... " />
-            <marker date="1524089954529" expanded="true" signature="4652:4778" ph="update logis... " />
-            <marker date="1524089954529" expanded="true" signature="5003:5063" ph="update logis... " />
-            <marker date="1524089954529" expanded="true" signature="5169:5298" ph="insert into logistica.m_hotel... " />
-            <marker date="1524089954529" expanded="true" signature="5399:5501" ph="insert into logistica.t_pisos_hotel... " />
-            <marker date="1524089954529" expanded="true" signature="5686:5891" ph="insert into logistica.t_personal_relevo_diario... " />
-            <marker date="1524089954529" expanded="true" signature="6271:6543" ph="insert into logistica.t_personal_relevo_diario... " />
-            <marker date="1524089954529" expanded="true" signature="6939:7175" ph="update logis... " />
-            <marker date="1524089954529" expanded="true" signature="7394:7507" ph="update logis... " />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HotelesController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TRegistroDiario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3383">
-          <caret line="237" column="54" selection-start-line="237" selection-start-column="54" selection-end-line="237" selection-end-column="54" />
+        <state relative-caret-position="170">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GitHub - royclarkson_spring-rest-service-oauth_ A simple OAuth protected REST service built with Spring Boot and Spring Security OAuth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1938" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="107" column="1" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/OAuth2ServerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="120" column="29" lean-forward="true" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/WebInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Configuracion/WebSecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/LoginKassaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/GreetingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/UsuarioRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Entidad/TPersonalRelevo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1246,6 +1161,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="90" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Controlador/HotelesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="170" column="52" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/transaltisa/hoteles/Dao/HotelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="106" column="20" lean-forward="true" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="140" />
+          <folding>
+            <element signature="e#0#9977#0" expanded="true" />
+            <marker date="1525871152877" expanded="true" signature="1634:2088" ph="insert into trn_sistemas.m_reporte_fallas... " />
+            <marker date="1525871152877" expanded="true" signature="2948:3087" ph="update trn_s... " />
+            <marker date="1525871152877" expanded="true" signature="4259:4397" ph="insert into logistica.m_hotel... " />
+            <marker date="1525871152877" expanded="true" signature="4652:4778" ph="update logis... " />
+            <marker date="1525871152877" expanded="true" signature="5003:5063" ph="update logis... " />
+            <marker date="1525871152877" expanded="true" signature="5169:5298" ph="insert into logistica.m_hotel... " />
+            <marker date="1525871152877" expanded="true" signature="5399:5501" ph="insert into logistica.t_pisos_hotel... " />
+            <marker date="1525871152877" expanded="true" signature="5686:5906" ph="insert into logistica.t_personal_relevo_diario... " />
+            <marker date="1525871152877" expanded="true" signature="6347:6634" ph="insert into logistica.t_personal_relevo_diario... " />
+            <marker date="1525871152877" expanded="true" signature="7096:7332" ph="update logis... " />
+            <marker date="1525871152877" expanded="true" signature="7551:7664" ph="update logis... " />
+          </folding>
         </state>
       </provider>
     </entry>

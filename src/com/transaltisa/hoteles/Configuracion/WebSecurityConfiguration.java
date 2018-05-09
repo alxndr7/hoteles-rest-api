@@ -40,6 +40,12 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 		 auth.userDetailsService(userDetailsService);
 	}
 
+	@Bean
+	CorsFilter corsFilter() {
+		CorsFilter filter = new CorsFilter();
+		return filter;
+	}
+
 	@Override
 	@Bean
 	public AuthenticationManager authenticationManagerBean() throws Exception {

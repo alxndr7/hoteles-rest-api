@@ -159,15 +159,16 @@ public class HotelesController {
     @RequestMapping(value = "insertPersonalRelevo", method = RequestMethod.POST)
     public Integer insert_personal_relevo(@RequestParam("dni") String dni, @RequestParam("nombreCompleto") String nombreCompleto,
                                           @RequestParam("puesto") String puesto, @RequestParam("flota") String flota,
-                                          @RequestParam("fechaIngreso") String fechaIngreso,@RequestParam("fechaSalida") String fechaSalida) {
-        return hotelRepository.insertPersonalRelevo(dni, nombreCompleto, puesto, flota, fechaIngreso, fechaSalida);
+                                          @RequestParam("fechaIngreso") String fechaIngreso,@RequestParam("fechaSalida") String fechaSalida,@RequestParam("orden") Long orden) {
+        return hotelRepository.insertPersonalRelevo(dni, nombreCompleto, puesto, flota, fechaIngreso, fechaSalida, orden);
     }
 
     @RequestMapping(value = "insertNuevoPersonalRelevo", method = RequestMethod.POST)
     public Integer insert_nuevo_personal_relevo(@RequestParam("dni") String dni, @RequestParam("nombreCompleto") String nombreCompleto,
                                                 @RequestParam("puesto") String puesto, @RequestParam("flota") String flota,
-                                                @RequestParam("fechaIngreso") String fechaIngreso,@RequestParam("fechaSalida") String fechaSalida) {
-        return hotelRepository.insertNuevoPersonalRelevo(dni, nombreCompleto, puesto, flota, fechaIngreso, fechaSalida);
+                                                @RequestParam("fechaIngreso") String fechaIngreso,@RequestParam("fechaSalida") String fechaSalida,
+                                                @RequestParam("orden") Long orden) {
+        return hotelRepository.insertNuevoPersonalRelevo(dni, nombreCompleto, puesto, flota, fechaIngreso, fechaSalida, orden);
     }
 
     @RequestMapping("/pisos")

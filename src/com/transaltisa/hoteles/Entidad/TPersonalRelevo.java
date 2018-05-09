@@ -37,6 +37,9 @@ public class TPersonalRelevo implements Serializable{
     @Column(name = "HAB_HOT_ID")
     private Long habHotId;
 
+    @Column(name = "ORDEN")
+    private Long orden;
+
     @ManyToOne
     @PrimaryKeyJoinColumn(name = "HAB_HOT_ID")
     @JoinColumn(name = "HAB_HOT_ID", nullable = false, insertable=false, updatable=false)
@@ -45,7 +48,7 @@ public class TPersonalRelevo implements Serializable{
     public TPersonalRelevo() {
     }
 
-    public TPersonalRelevo(THabitacionHotelDet habDet, Long personalRelevoId, String dni, String nombreCompleto, String puesto, String flota, String fechaIngreso, String fechaSalida, Long habHotId) {
+    public TPersonalRelevo(THabitacionHotelDet habDet, Long personalRelevoId, String dni, String nombreCompleto, String puesto, String flota, String fechaIngreso, String fechaSalida, Long habHotId, Long orden) {
         this.habDet = habDet;
         this.personalRelevoId = personalRelevoId;
         this.dni = dni;
@@ -55,6 +58,7 @@ public class TPersonalRelevo implements Serializable{
         this.fechaIngreso = fechaIngreso;
         this.fechaSalida = fechaSalida;
         this.habHotId = habHotId;
+        this.orden = orden;
     }
 
     public THabitacionHotelDet getHabDet() {
@@ -128,4 +132,5 @@ public class TPersonalRelevo implements Serializable{
     public void setHabHotId(Long habHotId) {
         this.habHotId = habHotId;
     }
+
 }
