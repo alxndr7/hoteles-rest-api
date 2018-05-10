@@ -147,6 +147,11 @@ public interface HotelRepository extends CrudRepository<MHotelMap, Long> {
     @Procedure
     void sp_desocupar_habitacion(@Param("habHotId") Long habHotId,@Param("personalRelevoId") Long personalRelevoId, @Param("observacion") String observacion);
 
+
+    @Procedure
+    void sp_per_diario_histo();
+
+
     @Query("select p from TPersonalRelevo p where habDet.hotelId =  :hotelId")
     List<TPersonalRelevo> reporte_diario_por_hotel(@Param("hotelId") Long hotelId);
 

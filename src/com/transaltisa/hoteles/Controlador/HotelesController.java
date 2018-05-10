@@ -209,6 +209,15 @@ public class HotelesController {
         return resp;
     }
 
+    @RequestMapping("/personal_diario_histo")
+    public Response sp_per_diario_histo(){
+        hotelRepository.sp_per_diario_histo();
+        Response resp = new Response();
+        resp.setMensaje("LLego");
+        return resp;
+    }
+
+
     @RequestMapping("/personal-relevo-hotel")
     public List<TPersonalRelevo> reporte_diario_por_hotel(@RequestParam("hotelId") Long hotelId){
         return hotelRepository.reporte_diario_por_hotel(hotelId);

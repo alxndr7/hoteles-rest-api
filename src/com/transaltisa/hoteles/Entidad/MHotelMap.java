@@ -22,8 +22,11 @@ import java.util.List;
                         @StoredProcedureParameter(mode = ParameterMode.IN, name = "habHotId", type = Long.class),
                         @StoredProcedureParameter(mode = ParameterMode.IN, name = "personalRelevoId", type = Long.class),
                         @StoredProcedureParameter(mode = ParameterMode.IN, name = "observacion", type = String.class)
-                })
-})
+                }),
+        @NamedStoredProcedureQuery(name = "MHotelMap.sp_per_diario_histo",
+                procedureName = "LOGISTICA.PRUEBA_INSERTAR")
+}
+)
 
 
 public class MHotelMap implements Serializable {

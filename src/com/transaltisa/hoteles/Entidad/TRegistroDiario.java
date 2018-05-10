@@ -18,7 +18,7 @@ public class TRegistroDiario implements Serializable{
     @ManyToOne
     @PrimaryKeyJoinColumn(name = "PERSONAL_RELEVO_ID")
     @JoinColumn(name = "PERSONAL_RELEVO_ID", nullable = false, insertable=false, updatable=false)
-    private TPersonalRelevoHist personalRelevoId;
+    private TPersonalRelevoDiar personalRelevoId;
 
     @Column(name = "REG1")
     private String reg1;
@@ -38,7 +38,7 @@ public class TRegistroDiario implements Serializable{
     public TRegistroDiario() {
     }
 
-    public TRegistroDiario(Long idRegDiar, TPersonalRelevoHist personalRelevoId, String reg1, String reg2, String reg3, Long hotelId, String fechaRegistro) {
+    public TRegistroDiario(Long idRegDiar, TPersonalRelevoDiar personalRelevoId, String reg1, String reg2, String reg3, Long hotelId, String fechaRegistro) {
         this.idRegDiar = idRegDiar;
         this.personalRelevoId = personalRelevoId;
         this.reg1 = reg1;
@@ -56,11 +56,11 @@ public class TRegistroDiario implements Serializable{
         this.idRegDiar = idRegDiar;
     }
 
-    public TPersonalRelevoHist getPersonalRelevoId() {
+    public TPersonalRelevoDiar getPersonalRelevoId() {
         return personalRelevoId;
     }
 
-    public void setPersonalRelevoId(TPersonalRelevoHist personalRelevoId) {
+    public void setPersonalRelevoId(TPersonalRelevoDiar personalRelevoId) {
         this.personalRelevoId = personalRelevoId;
     }
 
