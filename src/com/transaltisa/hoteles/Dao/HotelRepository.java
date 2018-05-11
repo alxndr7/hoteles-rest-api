@@ -173,8 +173,20 @@ public interface HotelRepository extends CrudRepository<MHotelMap, Long> {
     @Query(value = "update logistica.t_registro_diario set reg3 = 1, fecha_reg3 = sysdate where id_reg_diar = :idRegDiar", nativeQuery = true)
     Integer update_reg3(@Param("idRegDiar") Long idRegDiar);
 
+    @Modifying
+    @Query(value = "update logistica.t_registro_diario set destino = :destino where id_reg_diar = :idRegDiar", nativeQuery = true)
+    Integer update_destino(@Param("idRegDiar") Long idRegDiar, @Param("destino") String destino);
+
+
     @Query("select u from MUsuarioTerceros u where usuUsuario = :usuUsuario and passwUsuario = :passwUsuario")
     MUsuarioTerceros validar_usuario(@Param("usuUsuario") String usuUsuario, @Param("passwUsuario") String passwUsuario);
+
+    @Query("select u from VwTotalGeneral u")
+    VwTotalGeneral total_general();
+
+    @Query("select u from VwTotalPorHotel u")
+    List<VwTotalPorHotel> total_por_hotel();
+
 
     /*
     @Query()

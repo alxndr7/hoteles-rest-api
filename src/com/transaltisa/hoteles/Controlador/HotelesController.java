@@ -248,9 +248,24 @@ public class HotelesController {
         return hotelRepository.update_reg3(idRegDiar);
     }
 
+    @RequestMapping(value = "/update-destino",method = RequestMethod.POST)
+    public Integer update_destion(@RequestParam("idRegDiar") Long idRegDiar, @RequestParam("destino") String destino){
+        return hotelRepository.update_destino(idRegDiar,destino);
+    }
+
     @RequestMapping(value = "/validar-usuario",method = RequestMethod.POST)
     public MUsuarioTerceros update_reg3(@RequestParam("usuUsuario") String usuUsuario, @RequestParam("passwUsuario") String passwUsuario){
         return hotelRepository.validar_usuario(usuUsuario, passwUsuario);
+    }
+
+    @RequestMapping(value = "/total-general",method = RequestMethod.GET)
+    public VwTotalGeneral total_general(){
+        return hotelRepository.total_general();
+    }
+
+    @RequestMapping(value = "/total-por-hotel",method = RequestMethod.GET)
+    public List<VwTotalPorHotel> total_por_hotel(){
+        return hotelRepository.total_por_hotel();
     }
 
 

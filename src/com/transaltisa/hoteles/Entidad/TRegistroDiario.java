@@ -35,10 +35,14 @@ public class TRegistroDiario implements Serializable{
     @Column(name = "FECHA_REGISTRO")
     private String fechaRegistro;
 
+    @Column(name = "DESTINO")
+    private String destino;
+
+
     public TRegistroDiario() {
     }
 
-    public TRegistroDiario(Long idRegDiar, TPersonalRelevoDiar personalRelevoId, String reg1, String reg2, String reg3, Long hotelId, String fechaRegistro) {
+    public TRegistroDiario(Long idRegDiar, TPersonalRelevoDiar personalRelevoId, String reg1, String reg2, String reg3, Long hotelId, String fechaRegistro, String destino) {
         this.idRegDiar = idRegDiar;
         this.personalRelevoId = personalRelevoId;
         this.reg1 = reg1;
@@ -46,6 +50,7 @@ public class TRegistroDiario implements Serializable{
         this.reg3 = reg3;
         this.hotelId = hotelId;
         this.fechaRegistro = fechaRegistro;
+        this.destino = destino;
     }
 
     public Long getIdRegDiar() {
@@ -102,5 +107,13 @@ public class TRegistroDiario implements Serializable{
 
     public void setFechaRegistro(String fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
     }
 }
